@@ -1,6 +1,6 @@
 :root {
     --branding-color: rgb(69, 215, 205);
-    --secondary-color: rgb(247, 242, 214);
+    --secondary-color: rgb(247, 246, 241);
     --heading-font-family: 'Odibee Sans', cursive;
     --default-font-family: 'Poppins', sans-serif;
 }
@@ -15,8 +15,15 @@ h1 {
     font-size: 96px;
 }
 
+h2 {
+    font-size: 54px;
+    line-height: 1.5;
+}
+
 p {
     font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .hero {
@@ -45,4 +52,39 @@ p {
     font-size: 18px;
     line-height: 27px;
     padding: 12px 20px;
+}
+
+.btn-branding-outline {
+    color: var(--branding-color);
+    border: 1px solid var(--branding-color);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 12px 20px;
+}
+
+.project-description {
+    padding: 30px 60px;
+}
+
+@media (max-widht:960px) {
+    h1 {
+        font-size: 60px;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero {
+        background: var(--secondary-color);
+        text-align: center;
+        padding: 160px 20px;
+    }
 }
